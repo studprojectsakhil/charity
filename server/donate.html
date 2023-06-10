@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Front page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <section class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <a href="#">
+                        <div class="main-logo">
+                            <img src="img/main-logo.png" alt="">
+                            <h2>HELP CHARITY</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="http://localhost:3000">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAUSES</a></li>
+                            <li><a href="#">EVENT</a></li>
+                            <li><a href="#">PORTFOLIO </a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="donate_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 for-padding">
+                        <h3>Current Campaign Status</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <div class="w3-container">
+
+
+                            <p>Fund Collected:</p>
+                            
+                            <div class="w3-light-grey">
+                              <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">Collected</div>
+                            </div>
+                            <br>
+                            
+                            
+                            </div>
+                            
+                            <script>
+                            function move() {
+                              var elem = document.getElementById("myBar");   
+                              var width = 20;
+                              var id = setInterval(frame, 10);
+                              function frame() {
+                                if (width >= 30) {
+                                  clearInterval(id);
+                                } else {
+                                  width++; 
+                                  elem.style.width = width + '%'; 
+                                  elem.innerHTML = 'Collected';
+                                }
+                              }
+                            }
+                            </script>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="donors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="donors_input">
+                            <h2>DONATION NOW</h2>
+                            <form action="/savedonate" method="post">
+                                <p>Amount</p><input name="amount" type="text" placeholder="ETH">
+                                <p class="type">
+                                    <label for="type">TYPE : </label>
+                                    <input type="radio" name="time" id="type" checked>One Time
+                                    <input type="radio" name="time" id="type">Monthly
+                                    <input type="radio" name="time" id="type">Yearly <br>
+                                </p>
+                                <input type="checkbox" name="agree" id="agree" value="agree"/>
+                                <label for="agree">Publish my donation.</label>
+                                <h5>
+                                    <input name="user" type="text" placeholder="Name">
+                                    <input name="Message" type="text" placeholder="Message">
+                                </h5>
+<br>
+
+                            <button class="enableEthereumButton btn--radius-2 btn--blue btn">Link Wallet</button>
+                            <button class="sendEthButton btn--radius-2 btn--blue btn">Donate</button>
+                            <button class="w3-button w3-green" onclick="move()">Confirm</button> 
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            </div>
+                                                        </form>
+                           <center><h2 class="borderes"><a href="http://localhost:3000#">Home</a></h2></center>
+                        </div>
+
+  
+                        <div class="donors_image">
+                            <h2>FEATURED DONORS</h2>
+                            <div class="donors_featured owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 ETH</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 ETH</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 ETH</span> </p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/donors_featured_one.jpg" alt="">
+                                    <h3>Kenneth J. Garnica</h3>
+                                    <p>Donated Amount : <span>220 ETH</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-charity-text">
+                            <h2>HELP CHARITY</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                            <hr>
+                            <p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-5">
+                                <div class="footer-text one">
+                                    <h3>RECENT POST</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing </a></li>
+                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing</a></li>
+                                        <li><a href="#"><i class="material-icons">keyboard_arrow_right</i> Consectetur Adipisicing Elit</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3">
+                                <div class="footer-text two">
+                                    <h3>USEFUL LINKS</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Causes</a></li>
+                                        <li><a href="#">Event</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="footer-text one">
+                                    <h3>CONTACT US</h3>
+                                    <ul>
+                                        <li><a href="#"><i class="material-icons">location_on</i>1 Street, derby, FL 2147, USA</a></li>
+                                        <li><a href="#"><i class="material-icons">email</i>dartthemes@gmail.com</a></li>
+                                        <li><a href="#"><i class="material-icons">call</i>+123456789</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>Copyright @ 2017 <a href="#">DartThemes</a> | All Rights Reserved </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/animationCounter.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/active.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        const ethereumButton = document.querySelector('.enableEthereumButton');
+    const sendEthButton = document.querySelector('.sendEthButton');
+    
+    let accounts = [];
+    
+    //Sending Ethereum to an address
+    sendEthButton.addEventListener('click', () => {
+      ethereum
+        .request({
+          method: 'eth_sendTransaction',
+          params: [
+            {
+              from: accounts[0],
+              to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970',
+              value: '0x29a2241af62c0000',
+              gasPrice: '0x09184e72a000',
+              gas: '0x2710',
+            },
+          ],
+        })
+        .then((txHash) => console.log(txHash))
+        .catch((error) => console.error);
+    });
+    
+    ethereumButton.addEventListener('click', () => {
+      getAccount();
+    });
+    
+    async function getAccount() {
+      accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    }
+    </script>
+</body>
+
+</html>
