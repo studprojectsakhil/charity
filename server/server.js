@@ -132,7 +132,17 @@ const kyceschema = {
     key:String,
     donation:String,
     rstatus:String,
-    private:String
+    private:String,
+    user:String,
+    volunter:String,
+    beneficiary:String,
+    joined:String,
+    closed:String,
+    deleted:String,
+    active:String,
+    volnum:integer,
+    volreq:integer,
+    vulunterlist:array
 
 }
 
@@ -297,6 +307,8 @@ app.get("/blist", function(req, res) {
     })
    
 })
+
+
 
 
 app.get("/vlistuser", function(req, res) {
@@ -518,6 +530,9 @@ app.get("/featured", function(req, res) {
     }).limit(5)
    
 })
+
+
+
 
 
 app.listen(3005, function() {
